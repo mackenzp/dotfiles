@@ -24,6 +24,18 @@ set_prompt() {
 		fi
 	fi
 
+	# Virtual Environment
+	if [ -n "$VIRTUAL_ENV" ]; then
+		if [ -f "$VIRTUAL_ENV/__name__" ]; then
+			local name=`cat $VIRTUAL_ENV/__name__`
+		elif [ `basename $VIRTUAL_ENV` = "__" ]; then
+			local name=$(basename $(dirname $VIRTUAL_ENV))
+		else
+			local name=$(basename $VIRTUAL_ENV)
+		fi
+		PS1+=', '
+		PS1+="$ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX$name$ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX"
+	fi
 
 	# Timer: http://stackoverflow.com/questions/2704635/is-there-a-way-to-find-the-running-time-of-the-last-executed-command-in-the-shel
 	if [[ $_elapsed[-1] -ne 0 ]]; then
