@@ -2,10 +2,13 @@
 	syntax on
 	let mapleader=","
 	set autoindent
-	set tabstop=4
-	set shiftwidth=4
+	set tabstop=2 
+	set shiftwidth=2 
+	set expandtab
 	set dir=/tmp/
 	set number
+	colorscheme desert
+  
 
 	set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
