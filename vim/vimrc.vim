@@ -6,6 +6,7 @@
 	set shiftwidth=4
 	set dir=/tmp/
 	set number
+	colorscheme elflord
 
 	set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
