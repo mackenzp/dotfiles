@@ -1,4 +1,4 @@
-source '/home/mack/dotfiles/zsh/zshrc_manager.sh'
+source '/home/mackenzp/dotfiles/zsh/zshrc_manager.sh'
 alias charm="cd /snap/bin; ./pycharm-community; cd -;"
 alias clion="sh ~/Downloads/clion-2016.1.3/bin/clion.sh"
 alias af="cd .."
