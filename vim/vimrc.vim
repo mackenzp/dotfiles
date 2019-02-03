@@ -12,7 +12,7 @@
       set t_Co=256
   endif
 
-	colorscheme murphy
+	colorscheme desert
   
 
 	set cursorline
