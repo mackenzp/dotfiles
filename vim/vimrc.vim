@@ -8,7 +8,11 @@
 	set dir=/tmp/
 	set number
 
-	colorscheme desert
+  if has('unix')
+      set t_Co=256
+  endif
+
+	colorscheme murphy
   
 
 	set cursorline
